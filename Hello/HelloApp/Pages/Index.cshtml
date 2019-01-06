@@ -5,11 +5,12 @@
 }
 
 <h2>Say Hello</h2>
-<h3>@ViewData["Message"]</h3>
 
 <div asp-validation-summary="All"></div>
 <form method="POST">
     <p>Who do you want to say hello to?</p>
-    <div>Name: <input asp-for="Name" /></div><br/>
+    <div>Name: <input asp-for="Name" /></div><br />
     <input type="submit" value="Submit">
 </form>
+
+<h3>@ViewData["Message"]</h3>
