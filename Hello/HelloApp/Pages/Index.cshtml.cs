@@ -11,7 +11,8 @@ namespace HelloApp.Pages
     public class IndexModel : PageModel
     {
         // TODO: Service discovery
-        private static readonly Uri HelloServiceEndpoint = new Uri(@"https://localhost:5001/hello/");
+        //private static readonly Uri HelloServiceEndpoint = new Uri(@"https://localhost:5001/hello/");
+        private static readonly Uri HelloServiceEndpoint = new Uri(@"http://myHelloService/hello/");
         private static readonly HttpClient HttpClient = new HttpClient();
 
         [BindProperty]
