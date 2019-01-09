@@ -14,8 +14,8 @@ namespace HelloApp
         private readonly HttpClient _httpClient;
 
         // TODO: Service discovery
-        //private static readonly Uri HelloServiceEndpoint = new Uri(@"https://localhost:5001/hello/");
-        private static readonly Uri HelloServiceEndpoint = new Uri(@"http://myHelloService/hello/");
+        //private static readonly Uri HelloServiceEndpoint = new Uri(@"https://localhost:5001/hello/"); // local
+        private static readonly Uri HelloServiceEndpoint = new Uri(@"http://172.19.0.2/hello/");        // Docker (myHelloService doesn't resolve)
 
         public HelloServiceClient(HttpClient httpClient)
         {
